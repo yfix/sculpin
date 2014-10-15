@@ -36,8 +36,10 @@ class FlexibleExtensionFilesystemLoader implements \Twig_LoaderInterface, EventS
     /**
      * Constructor.
      *
-     * @param array  $paths      Paths
-     * @param array  $extensions Extensions
+     * @param string   $sourceDir
+     * @param string[] $sourcePaths
+     * @param string[] $paths
+     * @param string[] $extensions
      */
     public function __construct($sourceDir, array $sourcePaths, array $paths, array $extensions)
     {
@@ -61,11 +63,7 @@ class FlexibleExtensionFilesystemLoader implements \Twig_LoaderInterface, EventS
     }
 
     /**
-     * Gets the source code of a template, given its name.
-     *
-     * @param string $name The name of the template to load
-     *
-     * @return string The template source code
+     * {@inheritdoc}
      */
     public function getSource($name)
     {
@@ -77,12 +75,7 @@ class FlexibleExtensionFilesystemLoader implements \Twig_LoaderInterface, EventS
     }
 
     /**
-     * Gets the cache key to use for the cache for a given template name.
-     *
-     * @param string $name The name of the template to load
-     *
-     * @throws \Twig_Error_Loader
-     * @return string The cache key
+     * {@inheritdoc}
      */
     public function getCacheKey($name)
     {
@@ -112,12 +105,7 @@ class FlexibleExtensionFilesystemLoader implements \Twig_LoaderInterface, EventS
     }
 
     /**
-     * Returns true if the template is still fresh.
-     *
-     * @param string    $name The template name
-     * @param timestamp $time The last modification time of the cached template
-     *
-     * @return bool
+     * {@inheritdoc}
      */
     public function isFresh($name, $time)
     {

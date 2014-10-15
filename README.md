@@ -12,8 +12,7 @@ Visit [sculpin.io](http://sculpin.io) for more information.
 Documentation
 -------------
 
-Sculpin currently lacks any in-depth or formal documentation. It is currently
-"learn by example". If you are interested in trying out Sculpin you should fire
+Sculpin has [documentation](https://sculpin.io/documentation/) but also is "learn by example". If you are interested in trying out Sculpin you should fire
 up a Sculpin skeleton site to see Sculpin in action.
 
 
@@ -57,7 +56,7 @@ more mature than this one. If you are looking for a stable project with an
 established community, try something on the following admittedly incomplete
 list:
 
- * [Jekyll](http://github.com/mojombo/jekyll) &mdash; Ruby
+ * [Jekyll](http://jekyllrb.com/) &mdash; Ruby
  * [Octopress](http://octopress.org) &mdash; Ruby (framework on top of Jekyll)
  * [Hyde](http://ringce.com/hyde) &mdash; Python
  * [Phrozn](http://phrozn.info) &mdash; PHP
